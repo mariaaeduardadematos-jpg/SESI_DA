@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TechFuture Expo 2026 | Inscrição</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Inscrição Oficial</h1>
+        <nav>
+            <a href="index.html">Início</a> | 
+            <a href="evento.html">O Evento</a> | 
+            <a href="inscricao.html">Inscrição</a> | 
+            <a href="laboratorio.html">Laboratório HTML</a>
+        </nav>
+    </header>
+    <hr>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </p>
+            <p>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+            </p>
+            <p>
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" required>
+            </p>
+            <p>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <p>
+                <label for="empresa">Empresa / Instituição:</label>
+                <input type="text" id="empresa" name="empresa">
+            </p>
+            <p>
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo">
+            </p>
+            <p>
+                <label for="atuacao">Área de Atuação:</label>
+                <select id="atuacao" name="atuacao">
+                    <option value="">Selecione...</option>
+                    <option value="dev">Desenvolvimento de Software</option>
+                    <option value="infra">Infraestrutura e Redes</option>
+                    <option value="data">Ciência de Dados / IA</option>
+                    <option value="design">UI/UX e Design</option>
+                    <option value="gestao">Gestão / Produto</option>
+                    <option value="outro">Outros</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Detalhes da Participação & Preferências</legend>
+            
+            <p><strong>Dias do Evento (Selecione):</strong><br>
+                <input type="checkbox" id="dia1" name="dias" value="15"> <label for="dia1">15/10 - Abertura e IA</label><br>
+                <input type="checkbox" id="dia2" name="dias" value="16"> <label for="dia2">16/10 - Redes e Segurança</label><br>
+                <input type="checkbox" id="dia3" name="dias" value="17"> <label for="dia3">17/10 - VR e Robótica</label><br>
+                <input type="checkbox" id="dia4" name="dias" value="18"> <label for="dia4">18/10 - Hackathon e Encerramento</label>
+            </p>
+
+            <p><strong>Trilha de Interesse Principal (Escolha uma):</strong><br>
+                <input type="radio" id="trilha1" name="trilha" value="dev" checked> <label for="trilha1">Trilha Dev</label><br>
+                <input type="radio" id="trilha2" name="trilha" value="business"> <label for="trilha2">Trilha Negócios</label><br>
+                <input type="radio" id="trilha3" name="trilha" value="academic"> <label for="trilha3">Trilha Acadêmica</label>
+            </p>
+
+            <p>
+                <label for="alimentacao">Alimentação Especial / Restrição:</label><br>
+                <textarea id="alimentacao" name="alimentacao" rows="3" cols="40" placeholder="Informe se possui alguma alergia ou restrição alimentar (Ex: Vegano, Sem Glúten)..."></textarea>
+            </p>
+
+            <hr>
+            <h4>Campos de Validação Extra (Desafio)</h4>
+
+            <p>
+                <label for="senha">Crie uma Senha para o Portal do Visitante:</label>
+                <input type="password" id="senha" name="senha">
+            </p>
+            <p>
+                <label for="quantidade">Quantidade de ingressos adicionais que deseja comprar:</label>
+                <input type="number" id="quantidade" name="quantidade" min="0" max="5" value="0">
+            </p>
+            <p>
+                <label for="comprovante">Envie seu comprovante de estudante ou crachá profissional (PDF/Imagem):</label>
+                <input type="file" id="comprovante" name="comprovante">
+            </p>
+            <p>
+                <label for="site">Seu site / LinkedIn:</label>
+                <input type="url" id="site" name="site" placeholder="https://exemplo.com">
+            </p>
+            <p>
+                <label for="cor">Escolha a cor do seu crachá personalizado:</label>
+                <input type="color" id="cor" name="cor" value="#0000ff">
+            </p>
+            <p>
+                <label for="experiencia">Nível de experiência prévia com tecnologia (0 a 10):</label>
+                <input type="range" id="experiencia" name="experiencia" min="0" max="10" value="5">
+            </p>
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar Minha Inscrição</button>
+        <button type="reset">Limpar Formulário</button>
+    </form>
+
+    <br>
+    <hr>
+    <p><small>Seus dados estão protegidos em conformidade com as diretrizes da feira.</small></p>
+
+</body>
+</html>
