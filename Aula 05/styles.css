@@ -1,0 +1,38 @@
+.container {
+  position: relative; /* Define este container como a referência para o texto */
+  display: inline-block; /* Faz a caixa ter o tamanho exato da imagem */
+}
+
+.container img {
+  display: flex;  
+  display: block;
+  width: 100%; /* Ajusta a imagem ao tamanho do container */
+  height: auto;
+}
+
+.texto-na-frente {
+  position: absolute; /* Permite mover o texto livremente sobre a imagem */
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: black;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.informações {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.informações img {
+  width: 5%;
+  top: 20%;
+  left: 30%;
+  height: auto;
+  object-fit: cover;
+}
