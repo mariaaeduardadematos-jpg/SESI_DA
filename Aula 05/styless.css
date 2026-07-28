@@ -52,7 +52,7 @@ body {
 }
 
 .saiba-mais{
-   margin-top: -175px;
+   margin-top: -178px;
 }
 
 .saiba-mais a{
@@ -73,6 +73,7 @@ body {
     color: white;
     border: 1px solid black;
     cursor: pointer;
+    text-decoration:none;
 }
 
 .entrar-bnt:hover{
