@@ -1,0 +1,44 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Caixa da calculadora */
+.calculadora {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Campo onde aparecem os números */
+#visor {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Organização das linhas de botões */
+.linha {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+/* Estilo dos botões */
+button {
+  flex: 1;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
