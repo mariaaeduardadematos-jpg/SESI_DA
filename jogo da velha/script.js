@@ -1,6 +1,9 @@
 // true == x
 // false == o
 var ordem_jogada = true;
+var total_de_jogadas
+var total_de_vitorias_o
+var total_de_vitorias_x
 
 function jogar(num_btn){
     // BUSQUE O BOTÃO QUE ESTA SENDO CLICADO
@@ -117,4 +120,17 @@ function limparJogo() {
     document.getElementById("7").innerHTML = "";
     document.getElementById("8").innerHTML = "";
     document.getElementById("9").innerHTML = "";
+}
+
+function contabilizarGanhadores() {
+
+    if (ordem_jogada == true) {
+        total_de_vitorias_o++;
+    } else {
+        total_de_vitorias_x++;
+    }
+
+    document.getElementById("total_de_jogadas").innerHTML = "Total de jogadas: " + total_de_jogadas;
+    document.getElementById("total_o").innerHTML = "Total de vitorias o: " + total_de_vitorias_o;
+    document.getElementById("total_x").innerHTML = "Total de vitorias x: " + total_de_vitorias_x;
 }
