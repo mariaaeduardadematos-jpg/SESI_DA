@@ -8,8 +8,23 @@
 
 // localStorage.removeItem("nome");
 
-function Login(){
-    //Acessar o valor digitado nos campos USUARIO e SENHA
-    //Valisdar se o valores são iguais aos valores armazenados
-    // no LocalStorage 
+function login(){
+    // 1 Acessar o valor digitado nos campos USUARIO e SENHA
+    const local_usuario = localStorage.getItem("usuario")
+    const local_senha = localStorage.getItem("senha")
+
+    // 2 Valisdar se o valores são iguais aos valores armazenados
+    const campo_usuario = document.getElementById("usuario");
+    const campo_senha = document.getElementById("senha");
+
+
+    // 3 no LocalStorage 
+    if(campo_usuario == local_usuario){
+        alert("Login realizado com sucesso!");
+    }else{
+        alert("Usúario invalido!");
+    }
+
+    alert( campo_usuario.value + " " + campo_senha.value);
+
 }
