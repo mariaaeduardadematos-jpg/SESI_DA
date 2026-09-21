@@ -1,30 +1,65 @@
-// const nome = localStorage.getItem('nome');
+function login() {
+    // 1º Acessar o valor digitado nos campos USUARIO e SENHA
+    const cmapo_usuario = document.getElementById("usuario").value;
+    const campo_senha = document.getElementById("senha").value;
 
-// alert (nome);
+    // 2º carregar os valores do localStorange
+    const local_usuario = localStorage.getItem("usuario");
+    const local_senha = localStorage.getItem("senha");
 
-// localStorage.setItem("nome", "Maria Eduarda");
-
-// alert(localStorage.getItem("nome"));
-
-// localStorage.removeItem("nome");
-
-function login(){
-    // 1 Acessar o valor digitado nos campos USUARIO e SENHA
-    const local_usuario = localStorage.getItem("usuario")
-    const local_senha = localStorage.getItem("senha")
-
-    // 2 Valisdar se o valores são iguais aos valores armazenados
-    const campo_usuario = document.getElementById("usuario");
-    const campo_senha = document.getElementById("senha");
-
-
-    // 3 no LocalStorage 
-    if(campo_usuario == local_usuario){
-        alert("Login realizado com sucesso!");
-    }else{
-        alert("Usúario invalido!");
+    // 3º Validar se o valores digitados são iguais aos valores armazenados no localStorage
+    if (cmapo_usuario == local_usuario && campo_senha == local_senha) {
+        alert("Login realizado com sucesso! 👍");
+    } else {
+        alert("Usuário ou senha inválidos! 👎");
     }
 
-    alert( campo_usuario.value + " " + campo_senha.value);
-
 }
+
+
+function cadastro() {
+        // 1º Carregar os campos de cadastro
+        // NOME, USUÁRIO, SENHA, PALAVRA-PASSE
+
+
+        // 2º Cadastrar os dados no localStorage
+        // Ex.: localStorage.setItem("NOME", valor)
+        // OBS.: "valor" é o dado que foi carregado no passo 1
+
+
+        // 3º Redirecionar para a tela de login
+}
+
+
+function recuperar_senha() {
+    // 1º Carregar os valores dos campos NOME e PALAVRA-PASSE
+
+
+// 2º Buscar no localStorage os valores de NOME e PALAVRA-PASSE
+
+
+// 3º Comparar se os valores carregados nos campos da tela
+// são compatíveis com os valores armazenados no localStorage.
+//
+// Se forem iguais, exibir a senha na tela ou em um alert.
+//
+// Se forem diferentes, notificar o usuário na tela ou em um alert
+// informando que os dados não são compatíveis.
+// Além disso, limpar os campos de entrada (inputs).
+
+
+// DESAFIO SEM I.AAAAA:
+//
+// Vocês devem implementar um controle de tentativas para a recuperação de senha.
+//
+// REGRAS:
+// Vocês devem validar a quantidade de tentativas incorretas
+// de NOME e PALAVRA-PASSE.
+//
+// Quando o usuário errar 3 vezes, vocês devem bloquear os campos (inputs)
+// e impedir que o usuário realize uma nova tentativa de recuperação de senha.
+//
+// Lembrem-se de salvar a quantidade de erros no localStorage.
+}
+
+
