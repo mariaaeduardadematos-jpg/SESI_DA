@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>GERENCIADOR DE TAREFAS</h1>
+
+        <h3>1. Cadastrar nova tarefa</h3>
+        <label>Nome da tarefa:</label><br>
+        <input type="text" id="nome_tarefa"><br><br>
+
+        <label>Dias para a entrega:</label><br>
+        <input type="number" id="prazo_tarefa"><br><br>
+
+        <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+
+        <hr>
+
+        <h3>2. Lista de tarefas (Por ordem de urgência)</h3>
+        <ul id="lista_tarefas"></ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
